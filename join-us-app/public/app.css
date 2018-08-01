@@ -7,7 +7,7 @@ body {
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   font-family: 'Roboto', sans-serif;
   color: rgb(66, 69, 86);
-  height: 100%;
+  max-height: 100vh;
   background-image: url('http://i.imgur.com/BJP2Q1j.jpg');
   background-size: cover;
   font-weight: 100;
