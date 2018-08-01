@@ -1,8 +1,26 @@
 var express = require('express');
 var app = express();
+var mysql = require('mysql');
 
+// connect to mysql database
+var connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'join_us_app'
+});
+
+connection.connect();
+
+// routes
 app.get('/', function(req, res) {
-  res.send('HELLO FROM OUR WEB APP!');
+  // res.send('HELLO FROM OUR WEB APP!');
+  var q = 'SELECT COUNT(*) AS total FROM users';
+  connection.query(q, function(err, results) {
+    if (err) throw err;
+    const total = results[0].total;
+    res.send(`We have ${total} users in our db`);
+  });
 });
 
 app.get('/joke', function(req, res) {
