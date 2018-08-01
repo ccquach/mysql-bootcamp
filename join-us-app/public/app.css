@@ -1,0 +1,69 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto', sans-serif;
+  color: rgb(66, 69, 86);
+  height: 100%;
+  background-image: url('http://i.imgur.com/BJP2Q1j.jpg');
+  background-size: cover;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20rem;
+  line-height: 20rem;
+  font-weight: 100;
+}
+
+p {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.form {
+  border: none;
+  border-bottom: 3px solid #ebebeb;
+  margin-top: 10rem;
+  width: 60%;
+  max-width: 70rem;
+  font-size: 2rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  background: transparent;
+}
+
+button {
+  border: 3px solid white;
+  font-size: 2rem;
+  color: rgb(66, 69, 86);
+  padding: 0.5rem 3rem;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.8);
+}
+input[type='email']:focus {
+  outline: none;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
